@@ -171,14 +171,17 @@ def sumDiff():
     x, y = input("Please enter two numbers(num1,num2)").split(",")
     return float(x + y), float(x - y)
 
+
 # 修改实参的值
 # addInterest函数中创建了新值，并且列表中的复制导致它引用新值；当Python执行垃圾收集时，原来的值被清除
 # 变量amounts从未改变，它仍然引用相同的列表，只是列表的状态在addInterest函数已更改
-def addInterest(balance,rate):
+def addInterest(balance, rate):
     for i in range(len(balance)):
-        balance[i]=balance[i]*(1+rate)
+        balance[i] = balance[i] * (1 + rate)
+
+
 def test():
-    amounts=[1000,2200,800,360]
-    rate=0.05
-    addInterest(amounts,rate)
+    amounts = [1000, 2200, 800, 360]
+    rate = 0.05
+    addInterest(amounts, rate)
     print(amounts)

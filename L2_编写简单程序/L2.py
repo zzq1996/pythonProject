@@ -53,7 +53,7 @@ def main():
     print("The average of the", score1, "and", score2, "is:", average)
 
 
-main()
+# main()
 
 """
     2.6 确定循环（计数循环）：for <var> in <sequence> <body>，其中<sequence>确定了循环执行的次数
