@@ -91,4 +91,5 @@ def main():
         print("{0:<15}{1:>5}".format(word, count))  # 单词在十五个空格中左对齐印刷，接着是在五个空格中右对齐的数字
 
 
-if __name__ == '__main__':  main()
+if __name__ == '__main__':
+    main()
